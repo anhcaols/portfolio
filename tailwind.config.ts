@@ -1,18 +1,98 @@
-import type { Config } from "tailwindcss";
+import type {Config} from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px'
+    },
+    colors: {
+      primary: '',
+      white: '#fff',
+      black: '#000',
+      main: '',
+    },
+    fontSize: {
+      xs: "10px",
+      sm: "12px",
+      md: "13px",
+      base: "14px",
+      lg: "16px",
+      xl: "18px",
+      xxl: "20px",
+      "2xl": "24px",
+      "3xl": "28px",
+      "4xl": "32px",
+      "5xl": "36rpx",
+      "6xl": "40px",
+      "7xl": "48px",
+      "8xl": "64px",
+      "9xl": "96px",
+      "10xl": "128px"
+    },
+    fontWeight: {
+      thin: "100",
+      extralight: "200",
+      light: "300",
+      normal: "400",
+      medium: "500",
+      semibold: "600",
+      bold: "700",
+      extrabold: "800",
+      black: "900",
+      100: "100",
+      200: "200",
+      300: "300",
+      400: "400",
+      500: "500",
+      600: "600",
+      700: "700",
+      800: "800",
+      900: "900"
+    },
+    opacity: {
+      0: "0",
+      5: "0.05",
+      10: "0.1",
+      15: "0.15",
+      20: "0.2",
+      25: "0.25",
+      30: "0.3",
+      35: "0.35",
+      40: "0.4",
+      45: "0.45",
+      50: "0.5",
+      55: "0.55",
+      60: "0.6",
+      65: "0.65",
+      70: "0.7",
+      75: "0.75",
+      80: "0.8",
+      85: "0.85",
+      90: "0.9",
+      95: "0.95",
+      100: "1"
+    },
+    scale: {
+      0: "0",
+      50: ".5",
+      75: ".75",
+      90: ".9",
+      95: ".95",
+      100: "1",
+      105: "1.05",
+      110: "1.1",
+      125: "1.25",
+      150: "1.5"
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      backgroundImage: {},
     },
   },
   plugins: [],
