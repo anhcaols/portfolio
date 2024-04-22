@@ -1,40 +1,39 @@
-import type {Config} from "tailwindcss";
+import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px'
+      sm: "480px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px"
     },
     colors: {
-      primary: '',
-      white: '#fff',
-      black: '#000',
-      main: '',
+      primary: "#33cc99", //#00c39a
+      white: "#fff",
+      black: "#000",
+      dark: "#141414",
+      light: "#f1f1f1",
+      gray: "#202020"
     },
     fontSize: {
-      xs: "10px",
-      sm: "12px",
-      md: "13px",
-      base: "14px",
-      lg: "16px",
-      xl: "18px",
-      xxl: "20px",
-      "2xl": "24px",
-      "3xl": "28px",
-      "4xl": "32px",
-      "5xl": "36rpx",
-      "6xl": "40px",
-      "7xl": "48px",
-      "8xl": "64px",
-      "9xl": "96px",
-      "10xl": "128px"
+      xs: "0.625rem", //10px
+      sm: "0.75rem", // 12px
+      md: "0.8125rem", //13px
+      base: "0.875rem", //14px
+      lg: "1rem", //16px
+      xl: "1.125rem", //18px
+      xxl: "1.25rem", // 20px
+      "2xl": "1.5rem", // 24px
+      "3xl": "1.75rem", //28px
+      "4xl": "2rem", //32px
+      "5xl": "2.25rem", //36px
+      "6xl": "2.5rem", // 40px
+      "7xl": "3rem", //48px
+      "8xl": "4rem", // 64px
+      "9xl": "6rem", //96px
+      "10xl": "8rem" //128px
     },
     fontWeight: {
       thin: "100",
@@ -92,9 +91,9 @@ const config: Config = {
       150: "1.5"
     },
     extend: {
-      backgroundImage: {},
-    },
+      backgroundImage: {}
+    }
   },
-  plugins: [],
+  plugins: []
 };
 export default config;
