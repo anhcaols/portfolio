@@ -10,12 +10,17 @@ const config: Config = {
       xl: "1280px"
     },
     colors: {
-      primary: "#33cc99", //#00c39a
+      primary: "#33cc99",
       white: "#fff",
       black: "#000",
       dark: "#141414",
-      light: "#f1f1f1",
-      gray: "#202020"
+      darkGray: "#1a1919",
+      light: "#fafafa",
+      gray: "#E4E4E799",
+      muted: "#cecece",
+      transparent: "transparent",
+      destructive: "#dc2626",
+      accent: "#f4f4f5"
     },
     fontSize: {
       xs: "0.625rem", //10px
