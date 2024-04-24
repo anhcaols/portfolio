@@ -15,7 +15,7 @@ export default function SignUpPage() {
         <div className="flex w-full flex-col items-center">
           <div className="flex items-center gap-2">
             <Box className="text-primary" size={32} />
-            <h2 className="text-2xl font-600">AnhLs OAuth</h2>
+            <h2 className="text-2xl font-600">Next Auth</h2>
           </div>
           <div className="w-full pt-8">
             <Form {...form}>
