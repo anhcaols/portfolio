@@ -20,7 +20,8 @@ const config: Config = {
       muted: "#cecece",
       transparent: "transparent",
       destructive: "#dc2626",
-      accent: "#f4f4f5"
+      accent: "#f4f4f5",
+      hover: "#2b2b2b"
     },
     fontSize: {
       xs: "0.625rem", //10px
