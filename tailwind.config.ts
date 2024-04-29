@@ -1,7 +1,11 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: ["./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: [
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/layouts/**/*.{js,ts,jsx,tsx,mdx}"
+  ],
   theme: {
     screens: {
       sm: "480px",
@@ -9,15 +13,30 @@ const config: Config = {
       lg: "1024px",
       xl: "1280px"
     },
+    container: {
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1240px"
+      },
+      center: true,
+      padding: {
+        xs: "20px",
+        sm: "20px",
+        md: "20px",
+        lg: "20px",
+        xl: "20px"
+      }
+    },
     colors: {
-      primary: "#33cc99",
+      primary: "#14c2a3",
       white: "#fff",
       black: "#000",
       dark: "#141414",
       darkGray: "#1a1919",
       light: "#fafafa",
-      gray: "#E4E4E799",
-      muted: "#cecece",
+      gray: "#b9b9bf",
       transparent: "transparent",
       destructive: "#dc2626",
       accent: "#f4f4f5",
@@ -100,6 +119,6 @@ const config: Config = {
       backgroundImage: {}
     }
   },
-  plugins: []
+  plugins: [require("tailwindcss-animate")]
 };
 export default config;
