@@ -26,7 +26,9 @@ export default function Header() {
             </LinkS>
           ))}
         </div>
-        <Button>Download CV</Button>
+        <a href="/CV.pdf" target="_blank">
+          <Button>Download CV</Button>
+        </a>
       </div>
     </div>
   );
