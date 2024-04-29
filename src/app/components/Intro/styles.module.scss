@@ -1,0 +1,47 @@
+.typewriter p {
+  border-right: .15em solid var(--primary);
+  white-space: nowrap;
+  overflow: hidden;
+}
+.typewriter p {
+  -webkit-animation: type 2s steps(40, end), blink .5s step-end infinite alternate ;
+  animation: type 2s steps(40, end), blink .5s step-end infinite alternate;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid var(--primary);
+  }
+  100% {
+    border-right: .15em solid var(--primary);
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid var(--primary);
+  }
+  100% {
+    border-right: .15em solid var(--primary);
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

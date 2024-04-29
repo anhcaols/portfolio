@@ -1,0 +1,39 @@
+.navItem {
+  padding: 16px;
+  cursor: pointer;
+  p {
+    position: relative;
+    &:before {
+      visibility: visible;
+      position: absolute;
+      content: "";
+      bottom: -6px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      width: 100%;
+      background-color: var(--primary);
+      transform: scaleX(0);
+    }
+  }
+  &:hover {
+    p {
+      &:before {
+      visibility: visible;
+        transform: scaleX(1);
+        transition: all 0.3s ease-in-out 0s;
+      }
+    }
+  }
+  &.active {
+    p {
+      color: var(--primary);
+      &:before {
+        visibility: visible;
+        transform: scaleX(1);
+        transition: all 0.3s ease-in-out 0s;
+      }
+    }
+  }
+}
+

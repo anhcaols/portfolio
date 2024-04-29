@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Lexend } from "next/font/google";
+import { IBM_Plex_Mono} from "next/font/google";
 import "../styles/main.scss";
 
-const lexend = Lexend({ subsets: ["latin"] });
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: "400"
+});
 
 export const metadata: Metadata = {
   title: "AnhLs Dev",
@@ -16,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={lexend.className}>{children}</body>
+      <body className={plexMono.className}>{children}</body>
     </html>
   );
 }
