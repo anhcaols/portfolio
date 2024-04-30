@@ -1,6 +1,8 @@
-import {MoveRight} from "lucide-react";
-import {Button} from "@/components/ui/button/button";
-import styles from "./styles.module.scss";
+"use client";
+
+import { MoveRight } from "lucide-react";
+import Typewriter from "typewriter-effect";
+import { Button } from "@/components/ui/button/button";
 
 export default function Intro() {
   return (
@@ -12,35 +14,45 @@ export default function Intro() {
             <h2 className="text-4xl !font-800 md:text-7xl">
               Hi, I&apos;m <span className="text-primary">AnhLs</span>
             </h2>
-            <div className={styles.typewriter}>
-              <p className="w-[310px] text-2xl font-700 md:w-[460px] md:text-5xl">a Professional Coder.</p>
-            </div>
-            <p className="mt-4 w-full lg:w-[86%] text-gray">
-              I&apos;m a web developer with over a year of experience. I&apos;m passionate about coding and the endless
-              exploration it offers. I&apos;m always driven to innovate and find the best solutions for my software.
+            <Typewriter
+              options={{
+                strings: ["a Professional Coder.", "a Web Developer."],
+                autoStart: true,
+                loop: true,
+                delay: 100,
+                deleteSpeed: 100,
+                cursorClassName: "text-primary font-700 text-4xl lg:text-5xl ",
+                wrapperClassName: "text-2xl font-700 md:text-5xl",
+                cursor: "_"
+              }}
+            />
+            <p className="mt-4 w-full text-gray lg:w-[86%]">
+              I&apos;m a web developer with over 1 year 6 months of experience. I&apos;m passionate about coding and the
+              endless exploration it offers. I&apos;m always driven to innovate and find the best solutions for my
+              software.
             </p>
           </div>
           <div className="mt-8 grid grid-cols-12 gap-4 lg:mt-16">
             <div className="col-span-12 lg:col-span-6">
               <p className="mb-3 text-gray">FIND WITH ME</p>
-              <div className="flex gap-2">
+              <div className="flex justify-between gap-2 sm:justify-start">
                 <Button>
                   Contact me
-                  <MoveRight className="ml-2 inline-block" size={16} strokeWidth={2}/>
+                  <MoveRight className="ml-2 inline-block" size={16} strokeWidth={2} />
                 </Button>
                 <a href="https://www.linkedin.com/in/anhcaols10/" target="_blank">
                   <Button variant="icon">
-                    <img className=" h-5 w-5" src="/assets/images/linkedin-alt.svg" alt="linkedin"/>
+                    <img className=" h-5 w-5" src="/assets/images/linkedin-alt.svg" alt="linkedin" />
                   </Button>
                 </a>
                 <a href="https://github.com/anhcaols" target="_blank">
                   <Button variant="icon">
-                    <img className=" h-6 w-6" src="/assets/images/github.svg" alt="github"/>
+                    <img className=" h-6 w-6" src="/assets/images/github.svg" alt="github" />
                   </Button>
                 </a>
                 <a href="https://facebook.com/anhcaolsdev" target="_blank">
                   <Button variant="icon">
-                    <img className=" h-6 w-6" src="/assets/images/facebook.svg" alt="facebook"/>
+                    <img className=" h-6 w-6" src="/assets/images/facebook.svg" alt="facebook" />
                   </Button>
                 </a>
               </div>
@@ -49,23 +61,23 @@ export default function Intro() {
               <p className="mb-3 text-gray">MY CORE</p>
               <div className="-ml-2 flex gap-2">
                 <Button variant="icon">
-                  <img className="h-8 w-8" src="/assets/images/react.svg" alt="react"/>
+                  <img className="h-8 w-8" src="/assets/images/react.svg" alt="react" />
                 </Button>
                 <Button variant="icon">
-                  <img className="h-8 w-8" src="/assets/images/node-js.svg" alt="nodejs"/>
+                  <img className="h-8 w-8" src="/assets/images/node-js.svg" alt="nodejs" />
                 </Button>
                 <Button variant="icon">
-                  <img className="h-8 w-8" src="/assets/images/javascript.svg" alt="javascript"/>
+                  <img className="h-8 w-8" src="/assets/images/javascript.svg" alt="javascript" />
                 </Button>
                 <Button variant="icon">
-                  <img className="h-8 w-8" src="/assets/images/typescript.svg" alt="typescript"/>
+                  <img className="h-8 w-8" src="/assets/images/typescript.svg" alt="typescript" />
                 </Button>
               </div>
             </div>
           </div>
         </div>
         <div className="col-span-6 lg:col-span-4">
-          <img className="h-full lg:h-[420px] w-auto object-cover" src="/assets/images/logo.jpg" alt="linkedin"/>
+          <img className="h-full w-auto object-cover lg:h-[420px]" src="/assets/images/logo.jpg" alt="linkedin" />
         </div>
       </div>
     </div>
