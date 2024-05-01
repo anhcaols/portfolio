@@ -10,7 +10,7 @@ export default function Home() {
     <MainLayout>
       <div className="flex flex-col gap-12 lg:gap-24 ">
         <Intro />
-        {/*<About />*/}
+        <About />
         {/*<Skills />*/}
         {/*<Projects />*/}
         <Contact />
