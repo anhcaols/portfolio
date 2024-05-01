@@ -40,7 +40,7 @@ const config: Config = {
       transparent: "transparent",
       destructive: "#dc2626",
       hover: "#2b2b2b",
-      accent: "#b9b9bf80",
+      accent: "#b9b9bf80"
     },
     fontSize: {
       xs: "0.625rem", //10px
@@ -116,7 +116,9 @@ const config: Config = {
       150: "1.5"
     },
     extend: {
-      backgroundImage: {}
+      boxShadow: {
+        custom: "0 0 32px 0 rgba(34, 183, 143, .5)"
+      },
     }
   },
   plugins: [require("tailwindcss-animate")]

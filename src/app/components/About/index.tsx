@@ -108,7 +108,7 @@ export default function About() {
   return (
     <div id="about" className="container px-4 pt-10">
       <h3 className="mb-6 text-2xl font-600">ABOUT ME</h3>
-      <Card>
+      <div className="hover:shadow-custom cursor-pointer border border-solid border-accent bg-hover p-5 transition-all duration-300 ease-in-out hover:border-primary">
         <h3 className="mb-4 text-xl font-600">As a Front-end Developer</h3>
         <p className="text-gray">
           Ever since I was in college, I have been passionate about programming and have always been fascinated by the
@@ -119,8 +119,8 @@ export default function About() {
           I&apos;m dynamic, creative and highly responsible person. I am always eager to learn and always ready to take
           on new challenges. I believe that I would be a valuable asset to your company.
         </p>
-      </Card>
-      <Card className="mt-4">
+      </div>
+      <div className="hover:shadow-custom mt-4 cursor-pointer border border-solid border-accent bg-hover p-5 transition-all duration-300 ease-in-out hover:border-primary">
         <h3 className="mb-4 text-xl font-600">Hobbies and interests</h3>
         <p className="text-gray">
           In my free time, I enjoy participating in sports activities such as playing football and going to the gym to
@@ -128,7 +128,7 @@ export default function About() {
           enjoy nature. Sometimes, I also like to spend time by myself to read books, listen to music or reflect on
           life.
         </p>
-      </Card>
+      </div>
       <div>
         <h3 className="my-6 text-xl font-600">My Skills</h3>
         <div className="flex flex-wrap justify-center gap-4">
