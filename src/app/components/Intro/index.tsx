@@ -40,21 +40,21 @@ export default function Intro() {
                   Contact me
                   <MoveRight className="ml-2 inline-block" size={16} strokeWidth={2} />
                 </Button>
-                <a href="https://www.linkedin.com/in/anhcaols10/" target="_blank">
-                  <Button variant="icon">
-                    <img className=" h-5 w-5" src="/assets/images/linkedin-alt.svg" alt="linkedin" />
-                  </Button>
-                </a>
-                <a href="https://github.com/anhcaols" target="_blank">
-                  <Button variant="icon">
-                    <img className=" h-6 w-6" src="/assets/images/github.svg" alt="github" />
-                  </Button>
-                </a>
-                <a href="https://facebook.com/anhcaolsdev" target="_blank">
-                  <Button variant="icon">
-                    <img className=" h-6 w-6" src="/assets/images/facebook.svg" alt="facebook" />
-                  </Button>
-                </a>
+                <Button variant="icon">
+                  <a href="https://www.linkedin.com/in/anhcaols10/" target="_blank">
+                    <img className="h-7 w-7" src="/assets/images/linkedin-alt.svg" alt="linkedin" />
+                  </a>
+                </Button>
+                <Button variant="icon">
+                  <a href="https://github.com/anhcaols" target="_blank">
+                    <img className="h-6 w-6" src="/assets/images/github.svg" alt="github" />
+                  </a>
+                </Button>
+                <Button variant="icon">
+                  <a href="https://facebook.com/anhcaolsdev" target="_blank">
+                    <img className="h-6 w-6" src="/assets/images/facebook.svg" alt="facebook" />
+                  </a>
+                </Button>
               </div>
             </div>
             <div className="col-span-12 lg:col-span-6">
