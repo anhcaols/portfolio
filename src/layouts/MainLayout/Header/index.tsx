@@ -14,9 +14,10 @@ export default function Header() {
         <div className="hidden gap-3 lg:flex">
           {NAVIGATION_CONFIGS.map((item) => (
             <LinkS
+              key={item.key}
               className={styles.navItem}
               activeClass={styles.active}
-              to={item?.path}
+              to={item.path}
               spy
               smooth
               offset={-80}
