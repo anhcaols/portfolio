@@ -1,9 +1,10 @@
 import * as React from "react";
 
 import { cn } from "@/lib/utils/cn";
+import styles from "./styles.module.scss";
 
 const Card = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(({ className, ...props }, ref) => (
-  <div ref={ref} className={cn("bg-card text-card-foreground rounded-xl border shadow", className)} {...props} />
+  <div ref={ref} className={cn(`rounded-none border text-light shadow ${styles.cornerBox}`, className)} {...props} />
 ));
 Card.displayName = "Card";
 
@@ -22,9 +23,7 @@ const CardTitle = React.forwardRef<HTMLParagraphElement, React.HTMLAttributes<HT
 CardTitle.displayName = "CardTitle";
 
 const CardDescription = React.forwardRef<HTMLParagraphElement, React.HTMLAttributes<HTMLParagraphElement>>(
-  ({ className, ...props }, ref) => (
-    <p ref={ref} className={cn("text-muted-foreground text-sm", className)} {...props} />
-  )
+  ({ className, ...props }, ref) => <p ref={ref} className={cn("text-sm text-gray", className)} {...props} />
 );
 CardDescription.displayName = "CardDescription";
 

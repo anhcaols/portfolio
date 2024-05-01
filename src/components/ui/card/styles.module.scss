@@ -1,0 +1,66 @@
+@use "@/styles/abstracts/mixins" as *;
+
+$border-width: 2px;
+$corner-size: 48px;
+
+.cornerBox {
+  background: var(--hover);
+  @include transitionAll;
+  border: $border-width solid #105252;
+  padding: 18px 20px;
+  position: relative;
+  z-index: 1;
+
+  &.active,
+  &:hover {
+    box-shadow: 0 0 32px 0 rgba(34, 183, 143, .5);
+
+    &::before {
+      width: 0 !important;
+    }
+
+    &::after {
+      height: 0 !important;
+    }
+
+    border-color: var(--primary);
+  }
+
+  &::before, &::after {
+    @include transitionAll;
+    content: '';
+    position: absolute;
+    background: var(--hover);
+    z-index: -1;
+  }
+
+  &::before {
+    width: calc(102% - #{$corner-size});
+    height: calc(100% + #{$border-width * 2});
+    top: -$border-width;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    height: calc(110% - 3rem);
+    width: calc(100% + 4px);
+    left: -2px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &.st2 {
+    &::before {
+      width: calc(105% - #{$corner-size});
+      height: calc(100% + #{$border-width * 2});
+      top: -$border-width;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &:hover::before {
+      width: 0;
+    }
+  }
+}
