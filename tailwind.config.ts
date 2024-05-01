@@ -39,8 +39,8 @@ const config: Config = {
       gray: "#b9b9bf",
       transparent: "transparent",
       destructive: "#dc2626",
-      accent: "#f4f4f5",
-      hover: "#2b2b2b"
+      hover: "#2b2b2b",
+      accent: "#b9b9bf80",
     },
     fontSize: {
       xs: "0.625rem", //10px
