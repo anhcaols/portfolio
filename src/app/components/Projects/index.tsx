@@ -2,10 +2,10 @@
 
 import "swiper/css";
 import { useCallback, useRef } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const projects = [
   {
@@ -197,7 +197,10 @@ export default function Projects() {
           {projects.map((project) => (
             <SwiperSlide key={project.id}>
               <a href={project.sourceCode} target="_blank">
-                <Card className="flex min-h-[270px] cursor-pointer flex-col justify-between" key={project.id}>
+                <Card
+                  className="hover:shadow-custom flex min-h-[270px] cursor-pointer flex-col justify-between"
+                  key={project.id}
+                >
                   <div>
                     <h3 className="text-xl font-600">{project.name}</h3>
                     <p className="three-line-text mt-4 text-gray">{project.description}</p>
