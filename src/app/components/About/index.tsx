@@ -125,7 +125,7 @@ export default function About() {
         <p className="text-gray">
           In my free time, I enjoy participating in sports activities such as playing football and going to the gym to
           stay fit and healthy. When I have time to spare, I like to play games with friends or go camping to relax and
-          enjoy nature. Sometimes, I also like to spend time by myself to read books, listen to music, or reflect on
+          enjoy nature. Sometimes, I also like to spend time by myself to read books, listen to music or reflect on
           life.
         </p>
       </Card>
