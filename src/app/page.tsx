@@ -8,12 +8,12 @@ import About from "@/app/components/About";
 export default function Home() {
   return (
     <MainLayout>
-      <div className="flex flex-col gap-16">
+      <div className="flex flex-col gap-12 lg:gap-24 ">
         <Intro />
         {/*<About />*/}
         {/*<Skills />*/}
         {/*<Projects />*/}
-        {/*<Contact />*/}
+        <Contact />
       </div>
     </MainLayout>
   );
