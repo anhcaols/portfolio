@@ -120,7 +120,7 @@ const projects = [
       {
         id: "4",
         name: "Shadcn",
-        icon: "/assets/images/tailwind-css.svg"
+        icon: "/assets/images/shadcn.svg"
       },
       {
         id: "5",
@@ -211,7 +211,7 @@ export default function Projects() {
                         key={tech.id}
                         className="border border-solid border-transparent bg-dark/80 px-2 py-1 transition-all duration-300 ease-in-out hover:border-accent"
                       >
-                        <div className="flex items-center gap-1">
+                        <div className="flex items-center gap-2">
                           <img className="h-5 w-5" src={tech.icon} alt="tech" />
                           {tech.name}
                         </div>

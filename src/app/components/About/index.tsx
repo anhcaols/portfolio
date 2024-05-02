@@ -108,7 +108,7 @@ export default function About() {
   return (
     <div id="about" className="container px-4 pt-10">
       <h3 className="mb-6 text-2xl font-600">ABOUT ME</h3>
-      <div className="hover:shadow-custom cursor-pointer border border-solid border-accent bg-hover p-5 transition-all duration-300 ease-in-out hover:border-primary">
+      <div className="cursor-pointer border border-solid border-accent bg-hover p-5 transition-all duration-300 ease-in-out hover:border-primary hover:shadow-custom">
         <h3 className="mb-4 text-xl font-600">As a Front-end Developer</h3>
         <p className="text-gray">
           Ever since I was in college, I have been passionate about programming and have always been fascinated by the
@@ -120,7 +120,7 @@ export default function About() {
           on new challenges. I believe that I would be a valuable asset to your company.
         </p>
       </div>
-      <div className="hover:shadow-custom mt-4 cursor-pointer border border-solid border-accent bg-hover p-5 transition-all duration-300 ease-in-out hover:border-primary">
+      <div className="mt-4 cursor-pointer border border-solid border-accent bg-hover p-5 transition-all duration-300 ease-in-out hover:border-primary hover:shadow-custom">
         <h3 className="mb-4 text-xl font-600">Hobbies and interests</h3>
         <p className="text-gray">
           In my free time, I enjoy participating in sports activities such as playing football and going to the gym to
@@ -133,7 +133,7 @@ export default function About() {
         <h3 className="my-6 text-xl font-600">My Skills</h3>
         <div className="flex flex-wrap justify-center gap-4">
           {skills.map((item) => (
-            <Card className="cursor-default !p-3 hover:animate-bounce hover:ease-linear" key={item.id}>
+            <Card className="cursor-default !p-3" key={item.id}>
               <div className="flex gap-2">
                 {item.icon && <img className="h-6 w-6" src={item.icon} alt="skills" />}
                 <p>{item.name}</p>
