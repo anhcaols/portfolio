@@ -13,8 +13,8 @@ const buttonVariants = cva(
         outline: `${styles.buttonWrapper} ${styles.btnEffect}`,
         link: "text-primary underline-offset-4 hover:underline transition-all duration-300 ease-in-out",
         destructive: "bg-destructive shadow hover:bg-destructive/90",
-        ghost: "bg-transparent shadow hover:bg-hover transition-all duration-300 ease-in-out",
-        icon: "bg-transparent shadow aspect-square !px-0 hover:bg-hover transition-all duration-300 ease-in-out"
+        ghost: "bg-transparent shadow hover:bg-card transition-all duration-300 ease-in-out",
+        icon: "bg-transparent shadow aspect-square !px-0 hover:bg-card transition-all duration-300 ease-in-out"
       },
       size: {
         sm: "h-8 rounded-md px-3 text-base !rounded-none",

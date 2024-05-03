@@ -39,7 +39,7 @@ const config: Config = {
       gray: "#b9b9bf",
       transparent: "transparent",
       destructive: "#dc2626",
-      hover: "#2b2b2b",
+      card: "#2b2b2b",
       accent: "#b9b9bf80"
     },
     fontSize: {

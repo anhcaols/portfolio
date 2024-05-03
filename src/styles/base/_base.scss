@@ -3,6 +3,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .three-line-text {
   overflow: hidden;
   display: -webkit-box;
@@ -25,5 +26,38 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: rgba(229, 231, 232, 0.8);
   border-radius: 10px;
+}
+
+.vertical-timeline::before {
+  background-color: var(--accent) !important;
+}
+
+.vertical-timeline-element-icon {
+  box-shadow: none !important;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: none !important;
+}
+
+.vertical-timeline-element-content-arrow {
+  border: none !important;
+  height: 3px !important;
+  width: 36px !important;
+  top: 30px !important;
+  background-color: var(--primary);
+}
+
+
+@media only screen and (max-width: 1169px) {
+  .vertical-timeline-element-content-arrow {
+    border: none !important;
+    height: 2px !important;
+    width: 26px !important;
+    top: 20px !important;
+  }
+  .vertical-timeline-element-content .vertical-timeline-element-date {
+    display: none !important;
+  }
 }
 

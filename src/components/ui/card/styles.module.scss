@@ -4,7 +4,7 @@ $border-width: 2px;
 $corner-size: 48px;
 
 .cornerBox {
-  background: var(--hover);
+  background: var(--card);
   @include transitionAll;
   border: $border-width solid #105252;
   padding: 20px;
@@ -30,7 +30,7 @@ $corner-size: 48px;
     @include transitionAll;
     content: '';
     position: absolute;
-    background: var(--hover);
+    background: var(--card);
     z-index: -1;
   }
 

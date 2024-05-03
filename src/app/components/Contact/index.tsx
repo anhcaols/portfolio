@@ -49,7 +49,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="col-span-6 lg:col-span-7">
-          <div className="cursor-pointer border border-solid border-accent bg-hover p-5 transition-all duration-300 ease-in-out hover:border-primary hover:shadow-custom">
+          <div className="cursor-pointer border border-solid border-accent bg-card p-5 transition-all duration-300 ease-in-out hover:border-primary hover:shadow-custom">
             <div className="flex flex-col gap-4">
               <Input placeholder="Full name" />
               <Input placeholder="Email address" type="email" />
