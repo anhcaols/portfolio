@@ -1,8 +1,11 @@
 "use client";
 
+import { Link as LinkS } from "react-scroll";
+import Image from "next/image";
 import { MoveRight } from "lucide-react";
 import Typewriter from "typewriter-effect";
 import { Button } from "@/components/ui/button/button";
+import styles from "@/layouts/MainLayout/Header/styles.module.scss";
 
 export default function Intro() {
   return (
@@ -36,23 +39,31 @@ export default function Intro() {
             <div className="col-span-12 lg:col-span-6">
               <p className="mb-3 text-gray">FIND WITH ME</p>
               <div className="flex justify-between gap-2 sm:justify-start">
-                <Button>
-                  Contact me
-                  <MoveRight className="ml-2 inline-block" size={16} strokeWidth={2} />
-                </Button>
+                <LinkS
+                  to="contact"
+                  spy
+                  smooth
+                  offset={-80}
+                  duration={500}
+                >
+                  <Button>
+                    Contact me
+                    <MoveRight className="ml-2 inline-block" size={16} strokeWidth={2} />
+                  </Button>
+                </LinkS>
                 <Button variant="icon">
                   <a href="https://www.linkedin.com/in/anhcaols10/" target="_blank">
-                    <img className="h-7 w-7" src="/assets/images/linkedin-alt.svg" alt="linkedin" />
-                  </a>
-                </Button>
-                <Button variant="icon">
-                  <a href="https://github.com/anhcaols" target="_blank">
-                    <img className="h-6 w-6" src="/assets/images/github.svg" alt="github" />
+                    <Image width={28} height={28} src="/assets/images/linkedin-alt.svg" alt="linkedin" />
                   </a>
                 </Button>
                 <Button variant="icon">
                   <a href="https://facebook.com/anhcaolsdev" target="_blank">
-                    <img className="h-6 w-6" src="/assets/images/facebook.svg" alt="facebook" />
+                    <Image width={24} height={24} src="/assets/images/facebook.svg" alt="facebook" />
+                  </a>
+                </Button>
+                <Button variant="icon">
+                  <a href="https://twitter.com/anhcaols/" target="_blank">
+                    <Image width={30} height={30} src="/assets/images/twitter.svg" alt="twitter" />
                   </a>
                 </Button>
               </div>
@@ -61,23 +72,23 @@ export default function Intro() {
               <p className="mb-3 text-gray">MY CORE</p>
               <div className="-ml-2 flex gap-2">
                 <Button variant="icon">
-                  <img className="h-8 w-8" src="/assets/images/react.svg" alt="react" />
+                  <Image width={32} height={32} src="/assets/images/react.svg" alt="react" />
                 </Button>
                 <Button variant="icon">
-                  <img className="h-8 w-8" src="/assets/images/node-js.svg" alt="nodejs" />
+                  <Image width={32} height={32} src="/assets/images/node-js.svg" alt="nodejs" />
                 </Button>
                 <Button variant="icon">
-                  <img className="h-8 w-8" src="/assets/images/javascript.svg" alt="javascript" />
+                  <Image width={32} height={32} src="/assets/images/javascript.svg" alt="javascript" />
                 </Button>
                 <Button variant="icon">
-                  <img className="h-8 w-8" src="/assets/images/typescript.svg" alt="typescript" />
+                  <Image width={32} height={32} src="/assets/images/typescript.svg" alt="typescript" />
                 </Button>
               </div>
             </div>
           </div>
         </div>
         <div className="col-span-6 lg:col-span-4">
-          <img className="h-full w-auto object-cover lg:h-[420px]" src="/assets/images/logo.jpg" alt="linkedin" />
+          <img className="h-full w-auto object-cover lg:h-[420px]" src="/assets/images/logo.jpg" alt="logo" />
         </div>
       </div>
     </div>

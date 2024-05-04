@@ -1,27 +1,7 @@
 export const NAVIGATION_CONFIGS = [
-  {
-    key: "home",
-    label: "Home",
-    path: "home"
-  },
-  {
-    key: "about",
-    label: "About",
-    path: "about"
-  },
-  {
-    key: "projects",
-    label: "Projects",
-    path: "projects"
-  },
-  {
-    key: "experience",
-    label: "Experience",
-    path: "experience"
-  },
-  {
-    key: "contact",
-    label: "Contact",
-    path: "contact"
-  }
-]
+  { key: "home", title: "Home", path: "home" },
+  { key: "about", title: "About", path: "about" },
+  { key: "projects", title: "Projects", path: "projects" },
+  { key: "experience", title: "Experience", path: "experience" },
+  { key: "contact", title: "Contact", path: "contact" }
+];

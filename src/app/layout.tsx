@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono } from "next/font/google";
 import "../styles/main.scss";
+import "animate.css";
 
 const plexMono = IBM_Plex_Mono({
   subsets: ["latin"],
