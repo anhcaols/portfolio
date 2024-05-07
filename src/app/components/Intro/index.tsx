@@ -30,7 +30,7 @@ export default function Intro() {
               }}
             />
             <p className="mt-4 w-full text-gray lg:w-[86%]">
-              I&apos;m a web developer with over 1 year 6 months of experience. I&apos;m passionate about coding and the
+              I&apos;m a web developer with nearly 2 years of experience. I&apos;m passionate about coding and the
               endless exploration it offers. I&apos;m always driven to innovate and find the best solutions for my
               software.
             </p>
@@ -39,33 +39,32 @@ export default function Intro() {
             <div className="col-span-12 lg:col-span-6">
               <p className="mb-3 text-gray">FIND WITH ME</p>
               <div className="flex justify-between gap-2 sm:justify-start">
-                <LinkS
-                  to="contact"
-                  spy
-                  smooth
-                  offset={-80}
-                  duration={500}
-                >
+                <LinkS to="contact" spy smooth offset={-80} duration={500}>
                   <Button>
                     Contact me
                     <MoveRight className="ml-2 inline-block" size={16} strokeWidth={2} />
                   </Button>
                 </LinkS>
-                <Button variant="icon">
-                  <a href="https://www.linkedin.com/in/anhcaols10/" target="_blank">
+                <a href="https://www.linkedin.com/in/anhcaols10/" target="_blank">
+                  <Button variant="icon">
                     <Image width={28} height={28} src="/assets/images/linkedin-alt.svg" alt="linkedin" />
-                  </a>
-                </Button>
-                <Button variant="icon">
-                  <a href="https://facebook.com/anhcaolsdev" target="_blank">
+                  </Button>
+                </a>
+                <a href="https://facebook.com/anhcaolsdev/" target="_blank">
+                  <Button variant="icon">
                     <Image width={24} height={24} src="/assets/images/facebook.svg" alt="facebook" />
-                  </a>
-                </Button>
-                <Button variant="icon">
-                  <a href="https://twitter.com/anhcaols/" target="_blank">
+                  </Button>
+                </a>
+                <a href="https://twitter.com/anhcaols/" target="_blank">
+                  <Button variant="icon">
                     <Image width={30} height={30} src="/assets/images/twitter.svg" alt="twitter" />
-                  </a>
-                </Button>
+                  </Button>
+                </a>
+                <a href="https://github.com/anhcaols/" target="_blank">
+                  <Button variant="icon">
+                    <Image width={24} height={24} src="/assets/images/github.svg" alt="github" />
+                  </Button>
+                </a>
               </div>
             </div>
             <div className="col-span-12 lg:col-span-6">

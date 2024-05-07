@@ -24,7 +24,7 @@ export default function Experience() {
                   <VerticalTimelineElement
                     key={item.id}
                     visible
-                    className=""
+                    className="cursor-default"
                     contentStyle={{ backgroundColor: "var(--card)", padding: 0 }}
                     contentArrowStyle={{ borderRight: "7px solid  var(--card)" }}
                     date={item.time}

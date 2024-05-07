@@ -7,7 +7,7 @@ export const experience = [
     id: "1",
     title: "Front-end Developer NorthStudio",
     description:
-      "I worked as a front-end developer for 1 year and 6 months. While working here, I have trained myself to discover new knowledge. From there, it helped me improve my skills in software development.",
+      "I have been working as a front-end developer for nearly 2 years. While working here, I have trained myself to discover new knowledge. From there, it helped me improve my skills in software development.",
     time: "2022 - present",
     icon: BriefcaseBusiness
   },
@@ -279,5 +279,4 @@ export const skills = [
 ];
 
 const myCoreSkills = [
-
 ]

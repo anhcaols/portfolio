@@ -14,7 +14,7 @@ export default function About() {
           <div
             ref={ref}
             className={`${inView ? "animate__animated animate__fadeInLeft" : "invisible"} 
-            cursor-pointer border border-solid border-accent bg-card p-5 transition-all duration-300 ease-in-out hover:border-primary hover:shadow-custom`}
+            cursor-default border border-solid border-accent bg-card p-5 transition-all duration-300 ease-in-out hover:border-primary hover:shadow-custom`}
           >
             <h3 className="mb-4 text-xl font-600">As a Front-end Developer</h3>
             <p className="text-gray">
@@ -34,7 +34,7 @@ export default function About() {
           <div
             ref={ref}
             className={`${inView ? "animate__animated animate__fadeInRight" : "invisible"}
-              mt-4 cursor-pointer border border-solid border-accent bg-card p-5 transition-all duration-300 ease-in-out hover:border-primary hover:shadow-custom`}
+              mt-4 cursor-default border border-solid border-accent bg-card p-5 transition-all duration-300 ease-in-out hover:border-primary hover:shadow-custom`}
           >
             <h3 className="mb-4 text-xl font-600">Hobbies and interests</h3>
             <p className="text-gray">
