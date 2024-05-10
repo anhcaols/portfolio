@@ -11,7 +11,10 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "AnhLs Dev",
   description:
-    "I'm a engineer software. I'm passionate about coding and the endless exploration it offers. I'm always driven to innovate and find the best solutions for my software."
+    "I'm a web developer. I'm passionate about coding and the endless exploration it offers. I'm always driven to innovate and find the best solutions for my software.",
+  icons: {
+    icon: "/assets/images/logo.jpg"
+  }
 };
 
 export default function RootLayout({
