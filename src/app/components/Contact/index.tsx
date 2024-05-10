@@ -13,28 +13,32 @@ const contacts = [
     id: "1",
     title: "Phone",
     content: "+84 395562788",
-    icon: "/assets/images/google-voice.svg"
+    icon: "/assets/images/google-voice.svg",
+    type: ""
   },
   {
     id: "2",
     title: "Email",
     content: "caotheanhls2001@gmail.com",
     path: "mailto: caotheanhls2001@gmail.com",
-    icon: "/assets/images/gmail.svg"
+    icon: "/assets/images/gmail.svg",
+    type: ""
   },
   {
     id: "3",
     title: "Linkedin",
     content: "Anh Cao",
     path: "https://www.linkedin.com/in/anhcaols10/",
-    icon: "/assets/images/linkedin-alt.svg"
+    icon: "/assets/images/linkedin-alt.svg",
+    type: "social"
   },
   {
     id: "4",
     title: "Facebook",
     content: "Cao Thế Anh",
     path: "https://facebook.com/anhcaolsdev/",
-    icon: "/assets/images/facebook.svg"
+    icon: "/assets/images/facebook.svg",
+    type: "social"
   }
 ];
 
@@ -54,7 +58,7 @@ export default function Contact() {
                 {contacts.map((item) => {
                   return (
                     <Card key={item.id} className="cursor-pointer !p-3">
-                      <a href={item?.path}>
+                      <a target={item.type === "social" ? "_blank" : "_parent"} href={item?.path}>
                         <div className="flex gap-2 ">
                           <Image width={28} height={28} src={item.icon} alt="gmail" />
                           {item.title}:
