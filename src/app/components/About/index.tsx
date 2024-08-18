@@ -56,12 +56,12 @@ export default function About() {
               flex flex-wrap justify-center gap-4`}
             >
               {skills.map((item) => (
-                <Card className="cursor-default !p-3" key={item.id}>
+                <div className="cursor-default !p-3  border border-solid border-accent transition-all duration-300 ease-in-out hover:border-primary hover:shadow-custom" key={item.id}>
                   <div className="flex gap-2">
                     {item.icon && <Image height={24} width={24} src={item.icon} alt="skills" />}
                     <p>{item.name}</p>
                   </div>
-                </Card>
+                </div>
               ))}
             </div>
           )}

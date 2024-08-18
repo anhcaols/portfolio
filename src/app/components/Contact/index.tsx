@@ -57,7 +57,7 @@ export default function Contact() {
               <div className="flex flex-col gap-2">
                 {contacts.map((item) => {
                   return (
-                    <Card key={item.id} className="cursor-pointer !p-3">
+                    <div key={item.id} className="cursor-pointer !p-3 border border-solid border-accent transition-all duration-300 ease-in-out hover:border-primary hover:shadow-custom bg-card">
                       <a target={item.type === "social" ? "_blank" : "_parent"} href={item?.path}>
                         <div className="flex gap-2 ">
                           <Image width={28} height={28} src={item.icon} alt="gmail" />
@@ -65,7 +65,7 @@ export default function Contact() {
                           <p className="inline-block border-b border-solid border-primary">{item.content}</p>
                         </div>
                       </a>
-                    </Card>
+                    </div>
                   );
                 })}
               </div>

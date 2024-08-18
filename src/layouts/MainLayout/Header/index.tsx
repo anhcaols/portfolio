@@ -28,7 +28,7 @@ export default function Header() {
             </LinkS>
           ))}
         </div>
-        <a href="/CV.pdf" target="_blank">
+        <a href="#" >
           <Button>
             <ArrowDownToLine className="mr-2 inline-block" size={16} strokeWidth={2} />
             Download CV

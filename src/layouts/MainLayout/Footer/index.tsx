@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button/button";
 export default function Footer() {
   return (
     <div className="container mt-6 flex flex-col items-center justify-between gap-4 px-4 py-12 lg:mt-24 lg:flex-row">
-      <p className="text-gray">© 2024 ANHLS. ALL RIGHTS RESERVED.</p>
+      <p className="text-gray">© {new Date().getFullYear()} ANHLS. ALL RIGHTS RESERVED.</p>
       <div className="flex justify-between gap-2 sm:justify-start">
         <a href="https://facebook.com/anhcaolsdev/" target="_blank">
           <Button variant="icon">
