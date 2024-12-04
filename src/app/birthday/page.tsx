@@ -4,18 +4,18 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const images = [
-  "/assets/birthday/IMG_9198.JPG",
-  "/assets/birthday/IMG_1131.JPG",
-  "/assets/birthday/IMG_1130.JPG",
-  "/assets/birthday/IMG_1136.JPG",
-  "/assets/birthday/IMG_1125.JPG",
-  "/assets/birthday/IMG_1137.JPG",
-  "/assets/birthday/IMG_1132.JPG",
-  "/assets/birthday/IMG_1234.JPG",
-  "/assets/birthday/IMG_0554.JPG",
-  "/assets/birthday/IMG_1120.JPG",
-  "/assets/birthday/IMG_0298.JPG",
-  "/assets/birthday/061EFC66-55EC-481C-B2D9-3693D4B4072B.JPG"
+  "/assets/birthday/IMG_9198.jpg",
+  "/assets/birthday/IMG_1131.jpg",
+  "/assets/birthday/IMG_1130.jpg",
+  "/assets/birthday/IMG_1136.jpg",
+  "/assets/birthday/IMG_1125.jpg",
+  "/assets/birthday/IMG_1137.jpg",
+  "/assets/birthday/IMG_1132.jpg",
+  "/assets/birthday/IMG_1234.jpg",
+  "/assets/birthday/IMG_0554.jpg",
+  "/assets/birthday/IMG_1120.jpg",
+  "/assets/birthday/IMG_0298.jpg",
+  "/assets/birthday/061EFC66-55EC-481C-B2D9-3693D4B4072B.jpg"
 ];
 
 export default function BirthdayPage() {
