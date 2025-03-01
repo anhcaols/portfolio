@@ -30,7 +30,7 @@ export default function Intro() {
               }}
             />
             <p className="mt-4 w-full text-gray lg:w-[86%]">
-              I&apos;m a web developer with nearly 2 years of experience. I&apos;m passionate about coding and the
+              I&apos;m a web developer with over 2 years of experience. I&apos;m passionate about coding and the
               endless exploration it offers. I&apos;m always driven to innovate and find the best solutions for my
               software.
             </p>
