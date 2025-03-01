@@ -1,10 +1,10 @@
 "use client";
 
-import { Link as LinkS } from "react-scroll";
+import {Link as LinkS} from "react-scroll";
 import Image from "next/image";
-import { ArrowDownToLine } from "lucide-react";
-import { NAVIGATION_CONFIGS } from "@/lib/configs/navigations";
-import { Button } from "@/components/ui/button/button";
+import {ArrowDownToLine} from "lucide-react";
+import {NAVIGATION_CONFIGS} from "@/lib/configs/navigations";
+import {Button} from "@/components/ui/button/button";
 import styles from "./styles.module.scss";
 
 export default function Header() {
@@ -28,7 +28,7 @@ export default function Header() {
             </LinkS>
           ))}
         </div>
-        <a href="/CV.pdf"  >
+        <a href="/CV.pdf" target="_blank" rel="noopener noreferrer">
           <Button>
             <ArrowDownToLine className="mr-2 inline-block" size={16} strokeWidth={2} />
             Download CV
