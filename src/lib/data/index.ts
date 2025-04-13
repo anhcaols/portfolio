@@ -1,13 +1,13 @@
 "use client";
 
-import { BriefcaseBusiness, GraduationCapIcon } from "lucide-react";
+import {BriefcaseBusiness, GraduationCapIcon} from "lucide-react";
 
 export const experience = [
   {
     id: "1",
     title: "Front-end Developer NorthStudio",
     description:
-      "I have been working as a front-end developer for nearly 2 years. While working here, I have trained myself to discover new knowledge. From there, it helped me improve my skills in software development.",
+      "I have been working as a front-end developer for nearly 3 years. While working here, I have trained myself to discover new knowledge. From there, it helped me improve my skills in software development.",
     time: "2022 - present",
     icon: BriefcaseBusiness
   },
